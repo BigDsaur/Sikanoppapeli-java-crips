@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sikanoppapeli</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <h1>Sika-peli</h1>
+      <div class="scores">
+        <div class="player-score">
+          <h2>Pelaaja 1</h2>
+          <p>Total: <span id="score-player1">0</span></p>
+          <p>Round: <span id="round-player1">0</span></p>
+        </div>
+        <div class="player-score">
+          <h2>Pelaaja 2</h2>
+          <p>Total: <span id="score-player2">0</span></p>
+          <p>Round: <span id="round-player2">0</span></p>
+        </div>
+      </div>
+      <div class="controls">
+        <button id="roll-dice">Heitä noppaa</button>
+        <button id="hold-score">Pidä pisteet</button>
+        <p>Nopan luku: <span id="dice-result">-</span></p>
+      </div>
+      <p id="message"></p>
+    </div>
+
+    <script src="Sikanoppa.js"></script>
+  </body>
+</html>
