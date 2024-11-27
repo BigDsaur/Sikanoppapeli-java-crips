@@ -16,6 +16,11 @@ body, html {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+p {
+    margin: 5px 0;
+}
+
+
 h1 {
     color: rgb(53, 42, 29);
 }
@@ -61,4 +66,12 @@ button:hover {
 #message {
     font-size: 18px;
     color: #d32f2f;
+}
+
+#reset-game {
+    background-color: #f44336;
+}
+
+#reset-game:hover {
+    background-color: #d32f2f;
 }

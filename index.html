@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sikanoppapeli</title>
+    <title>Sika-peli (Kaksi noppaa)</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="game-container">
-      <h1>Sika-peli</h1>
+      <h1>Sika-peli (Kaksi noppaa)</h1>
       <div class="scores">
         <div class="player-score">
           <h2>Pelaaja 1</h2>
@@ -24,11 +24,12 @@
       <div class="controls">
         <button id="roll-dice">Heitä noppaa</button>
         <button id="hold-score">Pidä pisteet</button>
-        <p>Nopan luku: <span id="dice-result">-</span></p>
+        <button id="reset-game">Aloita alusta</button>
+        <p>Noppa 1: <span id="dice1-result">-</span></p>
+        <p>Noppa 2: <span id="dice2-result">-</span></p>
       </div>
       <p id="message"></p>
     </div>
-
     <script src="Sikanoppa.js"></script>
   </body>
 </html>
