@@ -1,35 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sika-peli (Kaksi noppaa)</title>
+    <title>Sika-peli: Yksi ja kaksi noppaa</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <h2>Sika yhdellä nopalla</h2>
     <div class="game-container">
-      <h1>Sika-peli (Kaksi noppaa)</h1>
-      <div class="scores">
-        <div class="player-score">
-          <h2>Pelaaja 1</h2>
-          <p>Total: <span id="score-player1">0</span></p>
-          <p>Round: <span id="round-player1">0</span></p>
-        </div>
-        <div class="player-score">
-          <h2>Pelaaja 2</h2>
-          <p>Total: <span id="score-player2">0</span></p>
-          <p>Round: <span id="round-player2">0</span></p>
-        </div>
+      <div class="player" id="player1-1dice">
+        <h3>Pelaaja 1</h3>
+        <p>Pisteet: <span id="score1-1dice">0</span></p>
       </div>
-      <div class="controls">
-        <button id="roll-dice">Heitä noppaa</button>
-        <button id="hold-score">Pidä pisteet</button>
-        <button id="reset-game">Aloita alusta</button>
-        <p>Noppa 1: <span id="dice1-result">-</span></p>
-        <p>Noppa 2: <span id="dice2-result">-</span></p>
+      <div class="player" id="player2-1dice">
+        <h3>Pelaaja 2</h3>
+        <p>Pisteet: <span id="score2-1dice">0</span></p>
       </div>
-      <p id="message"></p>
     </div>
-    <script src="Sikanoppa.js"></script>
+    <p>Nykyinen summa: <span id="current-score-1dice">0</span></p>
+    <button id="roll-dice-1dice">Heitä noppaa</button>
+    <button id="hold-1dice">Pidä pisteet</button>
+    <button id="restart-1dice" style="display: none">Pelaa uudestaan</button>
+    <p id="message-1dice"></p>
+
+    <hr />
+
+    <h2>Sika kahdella nopalla</h2>
+    <div class="game-container">
+      <div class="player" id="player1-2dice">
+        <h3>Pelaaja 1</h3>
+        <p>Pisteet: <span id="score1-2dice">0</span></p>
+      </div>
+      <div class="player" id="player2-2dice">
+        <h3>Pelaaja 2</h3>
+        <p>Pisteet: <span id="score2-2dice">0</span></p>
+      </div>
+    </div>
+    <p>Noppa 1: <span id="dice1">-</span></p>
+    <p>Noppa 2: <span id="dice2">-</span></p>
+    <p>Nykyinen summa: <span id="current-score-2dice">0</span></p>
+    <button id="roll-dice-2dice">Heitä noppaa</button>
+    <button id="hold-2dice">Pidä pisteet</button>
+    <button id="restart-2dice" style="display: none">Pelaa uudestaan</button>
+    <p id="message-2dice"></p>
+
+    <script src="sika1.js"></script>
+    <script src="sika2.js"></script>
   </body>
 </html>
